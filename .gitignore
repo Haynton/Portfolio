@@ -1,0 +1,99 @@
+# ============================================
+# Node.js
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# ============================================
+# Build
+# ============================================
+dist/
+build/
+*.min.js
+*.min.css
+
+# ============================================
+# Système d'exploitation
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# Éditeurs et IDEs
+# ============================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============================================
+# Environnement et secrets
+# ============================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+
+# ============================================
+# Cache
+# ============================================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# ============================================
+# Tests
+# ============================================
+coverage/
+.nyc_output/
+
+# ============================================
+# Fichiers temporaires
+# ============================================
+tmp/
+temp/
+*.tmp
+
+# ============================================
+# Autres
+# ============================================
+.vercel/
