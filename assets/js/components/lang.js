@@ -4,10 +4,21 @@ export default function initBasedOnLang() {
 
   const lang = savedLang || browserLang;
 
-  // On vérifie si on est déjà sur la page anglaise
   const isEnglishPage = location.pathname.startsWith("/en/");
 
   if (lang.startsWith("en") && !isEnglishPage) {
-    location.replace("/en/index.html"); // chemin correct selon ta structure
+    location.replace("/en/index.html");
+    return;
   }
+  if (!lang.startsWith("en") && isEnglishPage) {
+    location.replace("/index.html");
+    return;
+  }
+
+  document.querySelectorAll('a[href="/index.html"], a[href="/en/index.html"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      const selectedLang = link.getAttribute("href").includes("/en/") ? "en" : "fr";
+      localStorage.setItem("lang", selectedLang);
+    });
+  });
 }
