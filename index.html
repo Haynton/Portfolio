@@ -48,18 +48,6 @@
 
     </head>
     <body class="font-sans leading-relaxed bg-slate-50/40">
-        <script>
-            (function () {
-            const savedLang = localStorage.getItem("lang");
-            const browserLang = navigator.language || navigator.userLanguage || "fr";
-
-            const lang = savedLang || browserLang;
-
-            if (lang.startsWith("en") && !location.pathname.endsWith("index.en.html")) {
-                location.replace("/index.en.html");
-            }
-            })();
-        </script>
         <div class="max-w-7xl m-auto min-h-screen px-6 py-12 md:py-16 md:px-12 lg:px-8 lg:py-0">
             <div class="lg:flex justify-between lg:gap-8">
                 <header class="lg:sticky lg:top-0 lg:py-24 lg:w-[42%] lg:flex lg:flex-col lg:justify-between lg:max-h-screen flex-none">
