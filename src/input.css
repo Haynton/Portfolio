@@ -8,11 +8,11 @@
   .reveal-active {
     @apply translate-y-0 opacity-100;
   }
-  .active-link span:first-child {
+  .active-link .nav-line {
     @apply w-16 bg-stone-800;
   }
 
-  .active-link span:last-child {
+  .active-link .nav-text {
     @apply text-stone-800;
   }
 }
