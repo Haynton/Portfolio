@@ -4,6 +4,7 @@
   --color-primary: oklch(26.9% 0 0);
   --color-secondary: oklch(0.982 0.0041 91.45);
 }
+
 @layer utilities {
   .reveal-active {
     @apply translate-y-0 opacity-100;
