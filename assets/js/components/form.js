@@ -27,15 +27,15 @@ export default function initContactForm() {
 
       if (response.ok) {
         status.textContent = "✓ Message sent successfully!";
-        status.className = "text-green-700 bg-green-100";
+        status.className = "mb-4 p-3 text-sm rounded-md flex-1 text-green-700 bg-green-100";
         form.reset();
       } else {
         status.textContent = `✗ ${result.error || "An error occurred. Please try again."}`;
-        status.className = "text-red-700 bg-red-100";
+        status.className = "mb-4 p-3 text-sm rounded-md flex-1 text-red-700 bg-red-100";
       }
     } catch (error) {
       status.textContent = "✗ Network error. Please check your connection.";
-      status.className = "text-red-700 bg-red-100";
+      status.className = "mb-4 p-3 text-sm rounded-md flex-1 text-red-700 bg-red-100";
     } finally {
       // Réactiver le bouton
       submitBtn.disabled = false;
