@@ -14,7 +14,7 @@ export default function initActiveLink() {
       const distance = Math.abs(rect.top);
 
       // Garde la section avec la plus grande hauteur visible
-      if (rect.top <= 200 && rect.bottom > 0 && distance < minDistance) {
+      if (rect.top <= 350 && rect.bottom > 0 && distance < minDistance) {
         minDistance = distance;
         currentSection = section;
       }
