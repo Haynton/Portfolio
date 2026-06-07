@@ -33,6 +33,19 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Spam detected" });
   }
 
+  if (firstname.length > 100 || lastname.length > 100) {
+    return res.status(400).json({ error: "Input too long" });
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({ error: "Invalid email" });
+  }
+
+  if (message.length > 5000) {
+    return res.status(400).json({ error: "Message too long" });
+  }
+
   if (!firstname || !lastname || !email || !message) {
     return res.status(400).json({ error: "Missing fields" });
   }
