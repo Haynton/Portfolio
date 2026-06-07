@@ -42,7 +42,7 @@ Lancer Tailwind en mode watch dans un terminal :
 npm run dev
 ```
 
-Puis ouvrir `index.html` avec Live Server (clic droit → *Open with Live Server*).
+Puis ouvrir `index.html` avec Live Server (clic droit → _Open with Live Server_).
 
 Tailwind regénère `output.css` automatiquement à chaque modification, Live Server recharge le navigateur.
 
